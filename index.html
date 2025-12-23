@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a1929 0%, #1a1a2e 100%);
+            color: #e6f1ff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(26, 35, 126, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #64ffda 0%, #00bcd4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: #bbdefb;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: rgba(100, 255, 218, 0.1);
+            color: #64ffda;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: rgba(10, 25, 41, 0.9);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #64ffda 0%, #00bcd4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #b3e5fc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 45px;
+            background: linear-gradient(90deg, #64ffda 0%, #00bcd4 100%);
+            border-radius: 12px;
+            color: #0a1929;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 20px;
+            background: rgba(26, 26, 46, 0.7);
+        }
+
+        .feature-card {
+            background: rgba(30, 33, 64, 0.8);
+            padding: 30px 25px;
+            border-radius: 16px;
+            width: 280px;
+            text-align: center;
+            border: 1px solid rgba(100, 255, 218, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #64ffda;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #bbdefb;
+            font-size: 1.05rem;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #about {
+            background: rgba(26, 35, 126, 0.1);
+        }
+
+        #about h2 {
+            color: #64ffda;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #b3e5fc;
+            font-size: 1.2rem;
+        }
+
+        #download {
+            background: rgba(30, 33, 64, 0.2);
+        }
+
+        #download h2 {
+            color: #64ffda;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        #contact {
+            background: rgba(26, 35, 126, 0.1);
+            padding: 60px 20px;
+        }
+
+        #contact h2 {
+            color: #64ffda;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        #contact p {
+            color: #b3e5fc;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        #contact a {
+            color: #64ffda;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #0a1929;
+            border-top: 3px solid #64ffda;
+            color: #90a4ae;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Game Adventure</h1>
+        <nav>
+            <a href="#features">Особенности</a>
+            <a href="#about">Об игре</a>
+            <a href="#download">Играть</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Погрузись в игровую вселенную!</h2>
+        <p>Исследуй загадочные локации, собирай уникальные артефакты и разгадывай тайны древних цивилизаций.</p>
+        <a href="#download" class="btn">Начать игру</a>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature-card">
+            <h3>Уникальные артефакты</h3>
+            <p>Собери коллекцию из трёх древних артефактов, каждый из которых открывает новые возможности.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Динамическое окружение</h3>
+            <p>Исследуй интерактивную комнату с множеством секретов и скрытых объектов.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Современный интерфейс</h3>
+            <p>Минималистичный дизайн и удобное управление для полного погружения в игру.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>О проекте Mini Game</h2>
+        <p>Mini-Game Adventure — это современная текстовая RPG с элементами квеста. Игрокам предстоит исследовать таинственную комнату и решать головоломки.</p>
+    </section>
+
+    <section id="download">
+        <h2>Начать приключение</h2>
+        <a href="https://github.com/Jaggernyak" class="btn" target="_blank">Играть на GitHub</a>
+    </section>
+
+    <section id="contact">
+        <h2>Связь с разработчиком</h2>
+        <p>GitHub: <a href="https://github.com/Jaggernyak" target="_blank">Jaggernyak</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Mini Game Adventure. Все права защищены.</p>
+        <p>Разработка: <a href="https://github.com/Jaggernyak" target="_blank">Jaggernyak</a></p>
+    </footer>
+</body>
+</html>
