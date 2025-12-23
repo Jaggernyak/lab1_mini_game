@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\bin\Debug\net8.0\lab1_mini_game.exe
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\bin\Debug\net8.0\lab1_mini_game.deps.json
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\bin\Debug\net8.0\lab1_mini_game.runtimeconfig.json
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\bin\Debug\net8.0\lab1_mini_game.dll
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\bin\Debug\net8.0\lab1_mini_game.pdb
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.AssemblyInfo.cs
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.dll
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\refint\lab1_mini_game.dll
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.pdb
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\lab1_mini_game.genruntimeconfig.cache
+C:\Users\user\source\repos\lab1_mini_game\lab1_mini_game\obj\Debug\net8.0\ref\lab1_mini_game.dll
